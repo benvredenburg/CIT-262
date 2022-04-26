@@ -1,0 +1,19 @@
+{
+  "name": "cit-262",
+  "version": "1.0.0",
+  "description": "echo \"# CIT-262\" >> REAME.md",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/benvredenburg/CIT-262.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/benvredenburg/CIT-262/issues"
+  },
+  "homepage": "https://github.com/benvredenburg/CIT-262#readme"
+}
