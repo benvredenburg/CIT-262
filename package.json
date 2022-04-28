@@ -15,5 +15,10 @@
   "bugs": {
     "url": "https://github.com/benvredenburg/CIT-262/issues"
   },
-  "homepage": "https://github.com/benvredenburg/CIT-262#readme"
+  "homepage": "https://github.com/benvredenburg/CIT-262#readme",
+  "dependencies": {
+    "mocha": "^9.2.2",
+    "node-fetch": "^3.2.4"
+  },
+  "type":"module"
 }
