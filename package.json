@@ -18,7 +18,8 @@
   "homepage": "https://github.com/benvredenburg/CIT-262#readme",
   "dependencies": {
     "mocha": "^9.2.2",
+    "node": "^17.7.2",
     "node-fetch": "^3.2.4"
   },
-  "type":"module"
+  "type": "module"
 }
