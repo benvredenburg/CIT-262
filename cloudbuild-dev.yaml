@@ -5,16 +5,16 @@ steps:
     args:
       - "build"
       - "-t"
-      - "gcr.io/$power-glove/stedi-benjamin:latest"
+      - "gcr.io/power-glove/stedi-benjamin:latest"
       - "."
     timeout: 1800s
   - name: "gcr.io/cloud-builders/docker"
     id: Push
     args: 
       - "push"
-      - "gcr.io/$power-glove/stedi-benjamin:latest"
+      - "gcr.io/power-glove/stedi-benjamin:latest"
   - name: "gcr.io/cloud-builders/docker"
     id: Run
     args: 
     - "run"
-    - "gcr.io/$power-glove/stedi-benjamin:latest"
+    - "gcr.io/power-glove/stedi-benjamin:latest"
