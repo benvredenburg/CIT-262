@@ -18,3 +18,10 @@ steps:
     args: 
     - "run"
     - "gcr.io/power-glove/stedi-benjamin:latest"
+  - name: gcr.io/cloud-builders/gke-deploy
+    id: Deploy
+    args:
+     - run
+     - --image=gcr.io/$PROJECT_ID/stedi-benjamin:latest
+     - --location=us-west1-b
+     - --cluster=cluster-2
