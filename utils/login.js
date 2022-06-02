@@ -15,7 +15,7 @@ const login = async ({userName, password}) => {
 
 console.log(options.method);
 
-const tokenResponse = await fetch('http://localhost:3000/login', options);
+const tokenResponse = await fetch('http://34.168.221.70/login', options);
 const token = await tokenResponse.text();
 
 return token;
