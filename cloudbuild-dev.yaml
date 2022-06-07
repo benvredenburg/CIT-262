@@ -5,25 +5,25 @@ steps:
     args:
       - "build"
       - "-t"
-      - "gcr.io/power-glove/stedi-benjamin:latest"
+      - "gcr.io/power-glove/benjamin-stedi:latest"
       - "."
     timeout: 1800s
   - name: "gcr.io/cloud-builders/docker"
     id: Push
     args: 
       - "push"
-      - "gcr.io/power-glove/stedi-benjamin:latest"
+      - "gcr.io/power-glove/benjamin-stedi:latest"
   - name: gcr.io/cloud-builders/gke-deploy
     id: Deploy
     args:
      - run
-     - --image=gcr.io/$PROJECT_ID/stedi-benjamin:latest
+     - --image=gcr.io/$PROJECT_ID/benjamin-stedi:latest
      - --location=us-west1-b
      - --cluster=cluster-2
   - name: "gcr.io/cloud-builders/docker"
     id: Run
     args: 
     - "run"
-    - "gcr.io/power-glove/stedi-benjamin:latest"
+    - "gcr.io/power-glove/benjamin-stedi:latest"
 
 # testing
