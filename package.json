@@ -4,7 +4,7 @@
   "description": "echo \"# CIT-262\" >> REAME.md",
   "main": "index.js",
   "scripts": {
-    "test": "mocha"
+    "test": "mocha --timeout 10000"
   },
   "repository": {
     "type": "git",
